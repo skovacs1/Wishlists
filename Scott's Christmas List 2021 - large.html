@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scott's Christmas List 2021</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shojumaru">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metal+Mania">
+	<style>
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+}
+body,
+table {
+	text-align:center;
+}
+table {
+	border-collapse:collapse;
+}
+#page {
+	width:7.5in;
+	height:10in;
+	position:absolute;
+	left:50%;
+	margin-left:-3.75in;
+}
+#page th {
+	height:.5in;
+}
+#page th h1 {
+	font-size:22pt;
+}
+#page th h1 span {
+	font-variant:small-caps;
+	color:#080;
+}
+.section {
+	font-size:10pt;
+	width:3.65in;
+	height:9.5in;
+}
+.section {
+	border:1px solid #000;
+}
+.section tr:nth-child(3n+3) {
+	border-bottom:1px solid #000;
+	border-top:none;
+}
+#column_spacer {
+	width:.2in;
+}
+.product-image {
+	border-right:1px solid #000;
+}
+.description {
+	border-left:1px solid #000;
+}
+.description span {
+	font-size:80%;
+}
+.product-image {
+	height:1.5in;
+}
+.product-image img {
+	max-width:1.45in;
+	max-height:1.45in;
+}
+td.product {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+td.price {
+	font-family:"Lucida Console", Monaco, monospace;
+}
+td.platform {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	white-space:nowrap;
+	min-width:.4in;
+}
+.sub-title {
+	font-size:80%;
+	font-weight:normal;
+}
+.gift-card .price {
+	white-space:nowrap;
+}
+.small-caps,
+#akiba .product,
+#assassins-creed .product,
+#assassins-creed-valhalla .product,
+#attack-on-titan .product,
+#culdcept .product .title,
+#cyberdimension .product .title,
+#demon-gaze .product,
+#dragon-quest .product .title,
+#dissidia .product .pre-title,
+#etrian .product .sub-title,
+#fire-emblem .product .pre-title,
+#gravity-rush .product,
+#guardians .product,
+#kh-melody .product,
+#langrisser .product,
+#megatagmension .product,
+#tokyo-twilight .product,
+#witch-and-hundred-revival .product,
+#witch-and-hundred-two .product,
+#xanadu .product,
+#ys-viii .product {
+	font-variant:small-caps;
+}
+#dqxis .product,
+#langrisser .title,
+#sekiro .product,
+#trials-of-mana .product,
+#atelier-firis .product,
+#atelier-lydie-suelle .product,
+#atelier-ryza .product,
+#atelier-ryza2 .product,
+#atelier-lulua .sub-title,
+#atelier-nelke .sub-title,
+#assassins-creed-valhalla .product,
+#liar-princess .product,
+#kh-melody .product,
+#nier .product,
+#nier-automata .product,
+#knack2 .blue,
+#lost-child .product,
+#vesperia-definitive .sub-title {
+	font-family:Times New Roman,Times,serif;
+}
+#sakuna .product,
+#nioh2 .product,
+#kena .product,
+#witch-and-hundred-revival .product,
+#witch-and-hundred-two .product {
+	font-family:"Shojumaru",cursive;
+}
+#atelier-lulua .title,
+#atelier-nelke .title {
+	font-family:"Script MT",cursive;
+}
+#thirteen-sentinels .product,
+#lapis-x-labyrinth .product {
+	font-family:"Terminal",consolas,monospace;
+}
+#fist-north-star .product,
+#vesperia-definitive .title {
+	font-family:"Metal Mania",Times New Roman,serif;
+}
+#neo-twewy .product {
+	font-family:"Arial Narrow",Arial,sans-serif;
+}
+#nioh2 .product,
+#kena .product {
+	font-weight:lighter;
+}
+#lost-child .product {
+	font-weight:normal;
+}
+#neo-twewy .product,
+#sakura-wars .product,
+#vesperia-definitive .title {
+	font-style:italic;
+}
+#cyberdimension .title,
+#megatagmension .title {
+	font-size:90%;
+	font-weight:normal;
+}
+#cyberdimension .sub-title {
+	font-size:90%;
+	font-weight:bold;
+}
+#megatagmension .sub-title {
+	font-size:100%;
+	font-weight:bold;
+}
+#dqb2 .pre-title,
+#dqb2 .sub-title {
+	font-size:100%;
+	font-weight:bold;
+	color:#079ecb;
+}
+#dqb2 .title {
+	color:#542418;
+}
+#sao .title {
+	font-size:80%;
+}
+#dqxis .pre-title,
+#dqxis .sub-title {
+	font-size:80%;
+}
+#dqxis .pre-title,
+#dqxis .title .number {
+	color:#f4c328;
+}
+#dqxis .title {
+	color:#317bbc;
+}
+#trials-of-mana .product {
+	color:#68acd9;
+}
+#langrisser .title {
+	font-style:italic;
+	color:#a60002;
+}
+#nioh2 .sub-title {
+	font-size:100%;
+	font-weight:bold;
+	color:red;
+}
+#guardians .pre-title,
+#miles-morales .pre-title {
+	font-size:80%;
+	background-color:red;
+	color:white;
+}
+#miles-morales .sub-title {
+	font-family:Brush Script MT,"Comic Sans",cursive;
+	font-style:italic;
+	color:red;
+}
+#sekiro .sub-title {
+	color:#bda066;
+}
+#code-vein .title {
+	font-family:Didot, Times, serif;
+}
+#atelier-firis .product {
+	color:#109;
+}
+#atelier-lydie-suelle .product {
+	color:#d57;
+}
+#atelier-lulua .title {
+	color:#e79;
+}
+#atelier-ryza .title {
+	color:#319;
+}
+#atelier-ryza .sub-title {
+	color:#a71;
+}
+#atelier-ryza2 .title {
+	color:#d65;
+}
+#atelier-ryza2 .sub-title {
+	color:#d88;
+}
+#atelier-nelke .title {
+	color:#916;
+}
+#atelier-nelke .sub-title {
+	color:#619;
+}
+#liar-princess .title {
+	color:#753;
+}
+#kh-melody .sub-title {
+	font-weight:bold;
+	color:#540;
+}
+#persona-dancing .title {
+	color:#f4c328;
+}
+#sackboy .title {
+	color:#2af
+}
+#knack2 {
+	color:#b91;
+}
+#knack2 .blue{
+	color:#19b;
+}
+#fist-north-star .title {
+	color:#888;
+}
+#vesperia-definitive .title {
+	color:#839;
+}
+#nier .title .highlight,
+#nier-automata .title .highlight {
+	background-color:black;
+	color:white;
+}
+#tokyo-twilight .sub-title {
+	font-size:65%;
+}
+#nintendo-eshop .price td {
+	font-size:10pt;
+}
+#nintendo-eshop .title .system,
+.nintendo-network {
+	color:#ff7d00;
+}
+#nintendo-eshop .title .system span {
+	color:#888;
+}
+.wii-u {
+	color:#9f9fa1;
+}
+.wii-u .u {
+	background-color:#0096c8;
+	color:#fff;
+	display:inline-block;
+	vertical-align:text-top;
+	height:.7em;
+	width:.8em;
+}
+.wii-u .u span {
+	font-family:"Lucida Console",Monaco,monospace;
+	font-weight:normal;
+	position:relative;
+	top:-.3em;
+}
+.psn {
+	color:#b6a6fe;
+	background: -webkit-linear-gradient(left, #4659c2, #645bc6, #212376);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.xbox {
+	color:#2fad4a;
+}
+.xbox span {
+	color:#888;
+	vertical-align:baseline;
+}
+.steam {
+	color:#888;
+	background: -webkit-linear-gradient(top, #ddd, #666);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.nintendo-network {
+	font-size:10pt;
+}
+.three-ds {
+	font-weight:bolder;
+	color:#231f20;
+}
+.three-ds .red {	
+	color:#ce171f;
+}
+.ps4,
+.vita {
+	background: -webkit-linear-gradient(top, #4466ec, #000000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.platform.pc {
+	font-family:"Lucida Console", Monaco, monospace;
+}
+.preorder {
+	background-color:#eeffee;
+}
+.description a {
+	color:blue!important;
+	text-decoration:none!important;
+}
+	</style>
+</head>
+<body><table id="page">
+	<tr><th colspan="3"><h1><span>Scott's Christmas List 2021</span></h1></th></tr>
+	<tr>
+		<td><table class="section">
+			<tr id="ps-plus" class="item gift-card">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71sx6nPsRfL._AC_SY679_.jpg">
+				</td><td class="product" colspan="2">12 MONTH<br>PlayStation Plus<br>MEMBERSHIP
+				</td>
+			</tr><tr id="ps-plus-data" class="item gift-card">
+				<td class="price">$70
+				</td><td class="platform psn">PSN
+				</td>
+			</tr><tr id="ps-plus-description" class="item gift-card">
+				<td class="description" colspan="2">$70 in PSN Gift Cards is equivalent<br><span><a class="amazon" href="https://www.amazon.ca/dp/B00FJ4CDGQ">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/Platform/Games/753787">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/10629903">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000189796310">Walmart</a></span>
+				</td>
+			</tr><tr id="steam" class="item gift-card">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/815jDkv65fL._AC_SY606_.jpg">
+				</td><td class="product" colspan="2">STEAM<br>GIFT CARD
+				</td>
+			</tr><tr id="steam-data" class="item gift-card">
+				<td class="price">$10/$20/$50
+				</td><td class="platform steam">STEAM
+				</td>
+			</tr><tr id="steam-description" class="item gift-card">
+				<td class="description" colspan="2">Games and DLC<br>In-store only
+				</td>
+			</tr><tr id="xbl" class="item gift-card">
+				<td class="product-image" rowspan="3"><img style="object-fit:cover;height:1.5in;width:1in" src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/103/10328/10328211.jpg">
+				</td><td class="product" colspan="2">XBOX LIVE<br>GIFT CARD
+				</td>
+			</tr><tr id="xbl-data" class="item gift-card">
+				<td class="price">$10/$20/$50
+				</td><td class="platform xbox">XBOX <span>LIVE</span>
+				</td>
+			</tr><tr id="xbl-description" class="item gift-card">
+				<td class="description" colspan="2">Games and DLC<br>In-store only
+				</td>
+			</tr></tr><tr id="tales-of-arise" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81ERM1RSaOS._AC_SX569_.jpg">
+				</td><td class="product" colspan="2"><span class="title"><span class="small-caps">Tales</span> of <span class="small-caps">Arise</span>
+				</td>
+			</tr><tr id="tales-of-arise-data" class="item">
+				<td class="price">$66-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="tales-of-arise-description" class="item">
+				<td class="description" colspan="2">The next game in the Tales series<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07SMBNTSY">Amazon</a> (Best Price), <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/768844">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/12601502">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/PRD6LGIGVYJ2VR4">Walmart</a></span>
+				</td>
+			</tr><tr id="nioh2" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81uPal3Xl7L._AC_SX466_.jpg">
+				</td><td class="product" colspan="2"><span class="title">NIOH</span> <span class="sub-title">2</span>
+				</td>
+			</tr><tr id="nioh2-data" class="item">
+				<td class="price">$15-30
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="nioh2-description" class="item">
+				<td class="description" colspan="2">Demon samurai<br><span><a class="amazon" href="https://www.amazon.ca/dp/B0813TDY25">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/776693">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14309203">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000200703223">Walmart</a> (Best Price)</span>
+				</td>
+			</tr><tr id="sekiro" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81DK-nYLmLL._AC_SX679_.jpg">
+				</td><td class="product" colspan="2"><span class="title">SEKIRO</span><br><span class="sub-title">SHADOWS DIE TWICE</span>
+				</td>
+			</tr><tr id="sekiro-data" class="item">
+				<td class="price">$50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="sekiro-description" class="item">
+				<td class="description" colspan="2">Ninja fantasy<br><span><a class="gamestop" href="https://www.gamestop.ca/PS4/Games/751516">Gamestop</a>, Walmart may have</span>
+				</td>
+			</tr><tr id="miles-morales" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81zRSR9PyTL._AC_SX522_.jpg">
+				</td><td class="product" colspan="2"><span class="pre-title">MARVEL</span><br><span class="title">SPIDER-MAN</span><br><span class="sub-title">Miles Morales</span>
+				</td>
+			</tr><tr id="miles-morales-data" class="item">
+				<td class="price">$40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="miles-morales-description" class="item">
+				<td class="description" colspan="2">Spider-Man<br><span><a class="gamestop" href="https://www.gamestop.ca/PS4/Games/877915">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/15303203">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000202662042">Walmart</a></span>
+				</td>
+			</tr><tr id="persona5-strikers" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81aEa8zePHL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">PERSONA 5<br>STRIKERS</span>
+				</td>
+			</tr><tr id="persona5-strikers-data" class="item">
+				<td class="price">$40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="persona5-strikers-description" class="item">
+				<td class="description" colspan="2">Phantom thieves...again<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08Q6YYLN5">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/879426">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/15224693">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000202698441">Walmart</a></span>
+				</td>
+			</tr><tr id="atelier-firis" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/913lPa5-OdL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Atelier Firis</span><br><span class="sub-title">The Alchemist and the Mysterious Journey</span>
+				</td>
+			</tr><tr id="atelier-firis-data" class="item">
+				<td class="price">$40?
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="atelier-firis-description" class="item">
+				<td class="description" colspan="2">Alchemy<br>
+				</td>
+			</tr><tr id="atelier-lulua" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71AtriuXnxL._AC_SL1080_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Atelier Lulua</span><br><span class="sub-title">The Scion of Arland</span>
+				</td>
+			</tr><tr id="atelier-lulua-data" class="item">
+				<td class="price">$45-50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="atelier-lulua-description" class="item">
+				<td class="description" colspan="2">Alchemy again<br><span><a class="gamestop" href="https://www.gamestop.ca/PS4/Games/760404">Gamestop</a></span>
+				</td>
+			</tr><tr id="atelier-nelke" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71RGoNnDEZL._AC_SL1000_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Nelke &amp; the Legendary Alchemists</span><br><span class="sub-title">Ateliers of the New World</span>
+				</td>
+			</tr><tr id="atelier-nelke-data" class="item">
+				<td class="price">$35
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="atelier-nelke-description" class="item">
+				<td class="description" colspan="2">Cross-over alchemy<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07PX3BVBP">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/753861">Gamestop</a></span>
+				</td>
+			</tr><tr id="liar-princess" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81EJAEwWcYL._AC_SL1249_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Liar Princess and the Blind Prince</span>
+				</td>
+			</tr><tr id="liar-princess-data" class="item">
+				<td class="price">$33-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="liar-princess-description" class="item">
+				<td class="description" colspan="2">Werewolf<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07G97RKKH">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/754811">Gamestop</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000199122565">Walmart</a></span>
+				</td>
+			</tr><tr id="guardians" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/814Wg+Cg4yL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="pre-title">MARVEL</span><br><span class="title">Guardians of the Galaxy</span>
+				</td>
+			</tr><tr id="guardians-data" class="item">
+				<td class="price">$50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="guardians-description" class="item">
+				<td class="description" colspan="2">Space outlaws<br><span><a class="amazon" href="https://www.amazon.ca/dp/B0977SWV2V">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/883816">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/15550826">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000203057829">Walmart</a></span>
+				</td>
+			</tr><tr id="kena" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71gr9VjRurL._AC_SL1348_.jpg">
+				</td><td class="product" colspan="2"><span class="title">KENA</span><br><span class="sub-title">BRiDGE <span class="small-caps">of</span> SPiRiTS</span>
+				</td>
+			</tr><tr id="kena-data" class="item">
+				<td class="price">$54-65
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="kena-description" class="item">
+				<td class="description" colspan="2">Cute<br><span><a class="amazon" href="https://www.amazon.ca/dp/B09H72PCQJ">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/888128">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/15745605">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000204303454">Walmart</a></span>
+				</td>
+			</tr><tr id="witch-and-hundred-two" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81to4Pwj3PL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">The Witch and the Hundred Knight 2</span>
+				</td>
+			</tr><tr id="witch-and-hundred-two-data" class="item">
+				<td class="price">$10-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="witch-and-hundred-two-description" class="item">
+				<td class="description" colspan="2">RPG<br><span><a class="amazon" href="https://www.amazon.ca/dp/B0766F8T1J">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/739084">Gamestop</a></span>
+				</td>
+			</tr><tr id="sakura-wars" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/51zLYsMqf9L._AC_.jpg">
+				</td><td class="product" colspan="2"><span class="title">SAKURA WARS</span>
+				</td>
+			</tr><tr id="sakura-wars-data" class="item">
+				<td class="price">$30-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="sakura-wars-description" class="item">
+				<td class="description" colspan="2">Strategy<br><span><a class="amazon" href="https://www.amazon.ca/dp/B084RLFBHM">Amazon</a> (Best Price), <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/782556">Gamestop</a></span>
+				</td>
+			</tr><tr id="fist-north-star" class="item">
+				<td class="product-image" rowspan="3"><img src="https://static-ca.gamestop.ca/images/products/739784/3max.jpg">
+				</td><td class="product" colspan="2"><span class="title">FIST <span class="small-caps">of the</span> NORTH STAR</span><br><span class="sub-title small-caps">Lost Paradise</span>
+				</td>
+			</tr><tr id="fist-north-star-data" class="item">
+				<td class="price">$25
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="fist-north-star-description" class="item">
+				<td class="description" colspan="2">Martial arts<br><span><a class="gamestop" href="https://www.gamestop.ca/PS4/Games/751539">Gamestop</a></span>
+				</td>
+			</tr><tr id="knack2" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/61hTN9k7ztL._AC_.jpg">
+				</td><td class="product" colspan="2"><span class="title">KNACK <span class="blue">II</span></span>
+				</td>
+			</tr><tr id="knack2-data" class="item">
+				<td class="price">$25-30
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="knack2-description" class="item">
+				<td class="description" colspan="2">Action<br><span><a class="amazon" href="https://www.amazon.ca/dp/B074WCJRHZ">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/732739">Gamestop</a></span>
+				</td>
+			</tr><tr id="vesperia-definitive" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/91JRV2miTCS._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Tales of Vesperia</span><br><span class="sub-title">DEFINITIVE EDITION</span>
+				</td>
+			</tr><tr id="vesperia-definitive-data" class="item">
+				<td class="price">$20-30
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="vesperia-definitive-description" class="item">
+				<td class="description" colspan="2">Another enhanced remaster<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07DL353F8">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/751809">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/12601494">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000199163065">Walmart</a></span>
+				</td>
+			</tr><tr id="witch-and-hundred-revival" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/61T8jGSw1SL._AC_.jpg">
+				</td><td class="product" colspan="2"><span class="title">The Witch and the Hundred Knight</span><br><span class="sub-title">Revival Edition</span>
+				</td>
+			</tr><tr id="witch-and-hundred-revival-data" class="item">
+				<td class="price">$33-40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="witch-and-hundred-revival-description" class="item">
+				<td class="description" colspan="2">Play as the Witch<br><span><a class="amazon" href="https://www.amazon.ca/dp/B01J4KRIOM">Amazon</a></span>
+				</td>
+			</tr>
+		</table></td>
+		<td id="column_spacer">&nbsp;</td>
+		<td><table class="section">
+			<tr id="xbl-gold" class="item gift-card">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71OpS5s04ZL._AC_SY679_.jpg">
+				</td><td class="product" colspan="2">12 MONTH<br>XBOX LIVE<br><span class="sub-title">GOLD MEMBERSHIP</span>
+				</td>
+			</tr><tr id="xbl-gold-data" class="item gift-card">
+				<td class="price">$70
+				</td><td class="platform xbox">XBOX <span>LIVE</span>
+				</td>
+			</tr><tr id="xbl-gold-description" class="item gift-card">
+				<td class="description" colspan="2">$70 in XBL Gift Cards is equivalent<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08M8QQYGZ">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/Platform/Games/761399">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/10629882">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000197731506">Walmart</a></span>
+				</td>
+			</tr><tr id="psn" class="item gift-card">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71nNlltObjL._AC_SY679_.jpg">
+				</td><td class="product" colspan="2">Playstation Store<br>GIFT CARD
+				</td>
+			</tr><tr id="psn-data" class="item gift-card">
+				<td class="price">$10/$20/$50
+				</td><td class="platform psn">PSN
+				</td>
+			</tr><tr id="psn-description" class="item gift-card">
+				<td class="description" colspan="2">Games and DLC<br>In-store only
+				</td>
+			</tr><tr id="dqxis" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81WxG9JEYEL._AC_SX466_.jpg">
+				</td><td class="product" colspan="2"><span class="pre-title">DEFINITIVE EDITION</span><br><span class="title">DRAGON QUEST <span class="number">XI S</span></span><br><span class="sub-title">Echoes of an Elusive Age</span>
+				</td>
+			</tr><tr id="dqxis-data" class="item">
+				<td class="price">$40~50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="dqxis-description" class="item">
+				<td class="description" colspan="2">Enhanced adventure<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08DKWTLPZ">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/876819">Gamestop</a></span>
+				</td>
+			</tr><tr id="sakuna" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81N%2BHSRAy6L._AC_SX466_.jpg">
+				</td><td class="product" colspan="2"><span class="title">SAKUNA</span><br><span class="sub-title">of Rice and Ruin</span>
+				</td>
+			</tr><tr id="sakuna-data" class="item">
+				<td class="price">$33-40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="sakuna-description" class="item">
+				<td class="description" colspan="2">Rice farming<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08CSHC19D">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/876548">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14934283">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000201934886">Walmart</a></span>
+				</td>
+			</tr><tr id="trials-of-mana" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/91s68n4ZmhL._AC_SX342_.jpg">
+				</td><td class="product" colspan="2"><span class="title"><span class="small-caps">Trials</span> of <span class="small-caps">Mana</span></span>
+				</td>
+			</tr><tr id="trials-of-mana-data" class="item">
+				<td class="price">$40-50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="trials-of-mana-description" class="item">
+				<td class="description" colspan="2">A classic remade<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07XKTNYPM">Amazon</a> (Best Price), <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/773939">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/13901541">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000200452492">Walmart</a></span>
+				</td>
+			</tr><tr id="code-vein" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81CvvYnCJqL._AC_SX522_.jpg">
+				</td><td class="product" colspan="2"><span class="title">CODE VEIN</span>
+				</td>
+			</tr><tr id="code-vein-data" class="item">
+				<td class="price">$25
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="code-vein-description" class="item">
+				<td class="description" colspan="2">Anime RPG<br><span><a class="amazon" href="https://www.amazon.ca/dp/B072MK1CL1">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/733689">Gamestop</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000197283169">Walmart</a></span>
+				</td>
+			</tr><tr id="persona5-royal" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81BgoNw+WuL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">PERSONA 5<br>ROYAL</span>
+				</td>
+			</tr><tr id="persona5-royal-data" class="item">
+				<td class="price">$35-40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="persona5-royal-description" class="item">
+				<td class="description" colspan="2">Phantom thieves<br><span><a class="amazon" href="https://www.amazon.ca/dp/B085PS9F4H">Amazon</a> (Best Price), <a class="walmart" href="https://www.walmart.ca/en/ip/PRD4EDEQTRDB92C">Walmart</a></span>
+				</td>
+			</tr><tr id="persona-dancing" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81NqFw4AR9L._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">PERSONA DANCING<br>ENDLESS NIGHT COLLECTION</span>
+				</td>
+			</tr><tr id="persona-dancing-data" class="item">
+				<td class="price">$63-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="persona-dancing-description" class="item">
+				<td class="description" colspan="2">3 rhythm games<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07G7YP27Q">Amazon</a> (Best Price), <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/754810">Gamestop</a></span>
+				</td>
+			</tr><tr id="atelier-lydie-suelle" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71wFYVs4sRL._AC_SL1080_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Atelier Lydie &amp; Suelle</span><br><span class="sub-title">The Alchemists and the Mysterious Paintings</span>
+				</td>
+			</tr><tr id="atelier-lydie-suelle-data" class="item">
+				<td class="price">$53
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="atelier-lydie-suelle-description" class="item">
+				<td class="description" colspan="2">More alchemy<br><span><a class="amazon" href="https://www.amazon.ca/dp/B0762PZZPF">Amazon</a></span>
+				</td>
+			</tr><tr id="atelier-ryza" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/71LDMNNfAwL._AC_SL1080_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Atelier Ryza</span><br><span class="sub-title">Ever Darkness &amp; the Secret Hideout</span>
+				</td>
+			</tr><tr id="atelier-ryza-data" class="item">
+				<td class="price">$39-45
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="atelier-ryza-description" class="item">
+				<td class="description" colspan="2">Newer alchemy<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07V4396VM">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/773610">Gamestop</a> (Best Price)</span>
+				</td>
+			</tr><tr id="assassins-creed-valhalla" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81gsQznmzpL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Assassin's Creed</span><br><span class="sub-title">VALHALLA</span>
+				</td>
+			</tr><tr id="assassins-creed-valhalla-data" class="item">
+				<td class="price">$66-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="assassins-creed-valhalla-description" class="item">
+				<td class="description" colspan="2">Vikings<br><span><a class="amazon" href="https://www.amazon.ca/dp/B087ZLSH6P">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/B087ZLSH6P">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14605096">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000201555905">Walmart</a></span>
+				</td>
+			</tr><tr id="kh-melody" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/91FoHPx-R4L._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Kingdom Hearts</span><br><span class="sub-title">Melody of Memories</span>
+				</td>
+			</tr><tr id="kh-melody-data" class="item">
+				<td class="price">$40-50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="kh-melody-description" class="item">
+				<td class="description" colspan="2">Rhythm<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08H2Z5RQP">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/877383">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14924337">Best Buy</a></span>
+				</td>
+			</tr><tr id="nier" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81qQP8Zf0cL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">NieR Repli<span class="highlight">cant</span><br><span class="sub-title">ver.1.22474487139</span>
+				</td>
+			</tr><tr id="nier-data" class="item">
+				<td class="price">$40 / $65-80
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="nier-description" class="item">
+				<td class="description" colspan="2">Remastered classic<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08KDX849Q">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/878057">Gamestop</a> (Best Price), <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14969410">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000202322373">Walmart</a> (Best Price)</span>
+				</td>
+			</tr><tr id="sackboy" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/914Zw5gWJbL._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">SACKBOY</span><br><span class="sub-title">A BIG ADVENTURE</span>
+				</td>
+			</tr><tr id="sackboy-data" class="item">
+				<td class="price">$40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="sackboy-description" class="item">
+				<td class="description" colspan="2">Crafty<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08JQH3K35">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/877916">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14964970">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000202274252">Walmart</a></span>
+				</td>
+			</tr><tr id="lost-child" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/51XDENeVmZL._AC_.jpg">
+				</td><td class="product" colspan="2"><span class="title">The Lost Child</span>
+				</td>
+			</tr><tr id="lost-child-data" class="item">
+				<td class="price">$20-60
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="lost-child-description" class="item">
+				<td class="description" colspan="2">Dungeon crawl<br><span><a class="amazon" href="https://www.amazon.ca/dp/B075QTS1WG">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/743451">Gamestop</a><span>
+				</td>
+			</tr><tr id="thirteen-sentinels" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81lVA9vWmKS._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">13 SENTINELS</span><br><span class="sub-title">AEGIS RIM</span>
+				</td>
+			</tr><tr id="thirteen-sentinels-data" class="item">
+				<td class="price">$30-66
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="thirteen-sentinels-description" class="item">
+				<td class="description" colspan="2">13 intersecting stories<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08B4SHYNQ">Amazon</a> (Best Price), <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/876035">Gamestop</a></span>
+				</td>
+			</tr><tr id="atelier-ryza2" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81+WKB7BvdS._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Atelier Ryza 2</span><br><span class="sub-title">Lost Legends &amp; the Secret Fairy</span>
+				</td>
+			</tr><tr id="atelier-ryza2-data" class="item">
+				<td class="price">$45-50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="atelier-ryza2-description" class="item">
+				<td class="description" colspan="2">I don't have the first one<br><span><a class="amazon" href="https://www.amazon.ca/dp/B08DWK3J6F">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/876787">Gamestop</a> (Best Price)</span>
+				</td>
+			</tr><tr id="neo-twewy" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81rTECrNIvS._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="pre-title">NEO</span><br><span class="title">The World Ends With You</span>
+				</td>
+			</tr><tr id="neo-twewy-data" class="item">
+				<td class="price">$50
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="neo-twewy-description" class="item">
+				<td class="description" colspan="2">An improved remaster<br><span><a class="amazon" href="https://www.amazon.ca/dp/B0937TLQLW">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/882084">Gamestop</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000203332070">Walmart</a></span>
+				</td>
+			</tr><tr id="nier-automata" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/81tgXrGI2YL._AC_SX385_.jpg">
+				</td><td class="product" colspan="2"><span class="title">NieR Auto<span class="highlight">mata</span><br><span class="sub-title">Game of the YoRHa Edition</span>
+				</td>
+			</tr><tr id="nier-automata-data" class="item">
+				<td class="price">$30-40
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="nier-automata-description" class="item">
+				<td class="description" colspan="2">A complete package<br><span><a class="amazon" href="https://www.amazon.ca/dp/B07LD8H9W3">Amazon</a> (Best Price), <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/760481">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/13901541">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000199419311">Walmart</a></span>
+				</td>
+			</tr><tr id="lapis-x-labyrinth" class="item">
+				<td class="product-image" rowspan="3"><img src="https://m.media-amazon.com/images/I/813o+IuFQBS._AC_SL1500_.jpg">
+				</td><td class="product" colspan="2"><span class="title">Lapis x Labyrinth</span>
+				</td>
+			</tr><tr id="lapis-x-labyrinth-data" class="item">
+				<td class="price">&le;$30
+				</td><td class="platform ps4">PS4
+				</td>
+			</tr><tr id="lapis-x-labyrinth-description" class="item">
+				<td class="description" colspan="2">Only get it cheap<br>
+				</td>
+			</tr><!--tr id="langrisser" class="item">
+				<td class="product-image"><img src="https://static-ca.gamestop.ca/images/products/747840/3max.jpg">
+				</td><td class="product"><span class="title">Langrisser I & II</span>
+				</td><td class="price">$60
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Two strategy classics<br><a class="gamestop" href="https://www.gamestop.ca/PS4/Games/770171">Gamestop</a>
+				</td>
+			</tr><!--tr id="dqb2" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/81l1CHuJkOL._AC_SX342_.jpg">
+				</td><td class="product"><span class="pre-title">DRAGON QUEST</span><br><span class="title">BUILDERS </span><span class="sub-title">2</span>
+				</td><td class="price">$25-40
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Building stuff<br><a class="amazon" href="https://www.amazon.ca/dp/B07NQBQ9PK">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/763597">Gamestop</a><br> Best Buy and Walmart marketplace
+				</td>
+			</tr><tr id="DQH2" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/91jfVz55Z1L._AC_SX466_.jpg">
+				</td><td class="product"><span class="pre-title">DRAGON QUEST</span><br><span class="title">HEROES II</span>
+				</td><td class="price">$20-30
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Adventure<br><a class="amazon" href="">Amazon</a>, <a class="gamestop" href="">Gamestop</a>, <a class="best-buy" href="">Best Buy</a>, <a class="walmart" href="">Walmart</a>
+				</td>
+			</tr--><!--tr id="sao" class="item"><td class="product-image"><img src="https://m.media-amazon.com/images/I/71lUwwDff%2BL._AC_SY445_.jpg">
+				</td><td class="product"><span class="title">SWORD ART ONLINE</span><br><span class="sub-title">Alicization Lycoris</span>
+				</td><td class="price">$50~65
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Game within a game<br><a class="amazon" href="https://www.amazon.ca/dp/B07Q7LZ41Y">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/766617">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/13501638">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000200022600">Walmart</a>
+				</td>
+			</tr><tr id="tsushima" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/81Q89Ntx2%2BL._AC_SX522_.jpg">
+				</td><td class="product"><span class="title">GHOST</span><br><span class="sub-title">OF TSUSHIMA</span>
+				</td><td class="price">$50
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Samurai history<br><a class="amazon" href="https://www.amazon.ca/dp/B08BP77H4Z">Amazon</a>, <a class="gamestop" href="https://www.gamestop.ca/PS4/Games/876384">Gamestop</a>, <a class="best-buy" href="https://www.bestbuy.ca/en-ca/product/14682708">Best Buy</a>, <a class="walmart" href="https://www.walmart.ca/en/ip/6000201886410">Walmart</a>
+				</td>
+			</tr><tr id="toukiden-two" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/8101oN64k5L._SX522_.jpg">
+				</td><td class="product"><span class="title">Toukiden 2</span>
+				</td><td class="price">$50
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Demon hunting<br><a class="amazon" href="">Amazon</a>, <a class="gamestop" href="">Gamestop</a>, <a class="best-buy" href="">Best Buy</a>, <a class="walmart" href="">Walmart</a>
+				</td>
+			</tr--><!--tr id="gears-5" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/916oRYKksYL._AC_SY606_.jpg">
+				</td><td class="product"><span class="title">GEARS 5</span>
+				</td><td class="price">$40
+				</td><td class="platform xbone">Xbox One
+				</td><td class="description" colspan="2">Action shooting
+				</td><td class="stores"><a class="amazon" href="">Amazon</a>, <a class="gamestop" href="">Gamestop</a>, <a class="best-buy" href="">Best Buy</a>, <a class="walmart" href="">Walmart</a>
+				</td>
+			</tr--><!--tr id="witch-and-hundred-two" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/81to4Pwj3PL._SX522_.jpg">
+				</td><td class="product"><span class="title">The<br>Witch and the<br>Hundred Knight 2</span>
+				</td><td class="price">$40
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Role-playing strategy
+				</td>
+			</tr><tr id="ever-oasis" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/91pG2lhbRWL._SX644_.jpg">
+				</td><td class="product"><span class="title">Ever Oasis</span>
+				</td><td class="price">$60
+				</td><td class="platform three-ds"><span class="red">3</span><span>DS</span>
+				</td><td class="description" colspan="2">Charming grind 🔧
+				</td>
+			</tr><tr id="tokyo-twilight" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/61wAWu2gUIL.jpg">
+				</td><td class="product"><span class="pre-title">Tokyo Twilight</span><br><span class="title">Ghost Hunters</span><br><span class="sub-title">Daybreak Special Gigs</span>
+				</td><td class="price">$22
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Spooky puzzles 👻
+				</td>
+			</tr><tr id="fate" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/61Bl27wsiDL.jpg">
+				</td><td class="product"><span class="title">Fate/Extella</span><br><span class="sub-title">The Umbral Star</span>
+				</td><td class="price">$45
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Deep story and combat 💥
+				</td>
+			</tr><tr id="attack-on-titan" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/91d5OYYlnkL._SX644_.jpg">
+				</td><td class="product"><span class="title">Attack on Titan</span>
+				</td><td class="price">$45
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Because giants 👹
+				</td>
+			</tr><tr id="akiba" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/914jr0-5OYL._SX644_.jpg">
+				</td><td class="product"><span class="title">Akiba's Beat</span>
+				</td><td class="price">$35
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Like Persona 🕳
+				</td>
+			</tr><tr id="gravity-rush" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/81yVYXztzwL._SX644_.jpg">
+				</td><td class="product"><span class="title">Gravity Rush</span><br><span class="title">&mdash;Remastered&mdash;</span>
+				</td><td class="price">$60
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Gravity is a suggestion 🙃
+				</td>
+			</tr-->
+			<!--tr id="atelier-firis" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/913lPa5-OdL._SX644_.jpg">
+				</td><td class="product"><span class="title">Atelier Firis</span><br><span class="sub-title">The Alchemist & The Mysterious Journey</span>
+				</td><td class="price">$70
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Rich story 🤔
+				</td>
+			</tr><tr id="cyberdimension" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/91J%2B6-SOinL._SX644_.jpg">
+				</td><td class="product"><span class="title">Cyberdimension Neptunia</span><br><span class="sub-title">4 Goddesses Online</span>
+				</td><td class="price">$65
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">I enjoy this series 😏
+				</td>
+			</tr><tr id="berseria" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/91CeS0eHvPL._SX644_.jpg">
+				</td><td class="product"><span class="title">Tales of Berseria</span>
+				</td><td class="price">$70
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Great anti-hero 📓
+				</td>
+			</tr><tr id="nights-of-azure" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/910f5myRTKL._SX522_.jpg">
+				</td><td class="product"><span class="title">Nights of Azure</span>
+				</td><td class="price">$60
+				</td><td class="platform ps4">PS4
+				</td><td class="description" colspan="2">Artful action RPG 🤤
+				</td>
+			</tr><tr id="god-wars" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/61KC3cmPlYL.jpg">
+				</td><td class="product"><span class="title">God Wars</span><br><span class="sub-title">Future Past</span>
+				</td><td class="price">$50
+				</td><td class="platform vita">PS VITA
+				</td><td class="description" colspan="2">Historical fantasy 🏮
+				</td>
+			</tr><tr id="megatagmension" class="item">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/61DYUIcBKRL.jpg">
+				</td><td class="product"><span class="title">MegaTagmension</span><br><span class="sub-title">Blanc +Neptune<br>VS Zombies</span>
+				</td><td class="price">$35
+				</td><td class="platform vita">PS VITA
+				</td><td class="description" colspan="2">Interesting spin-off 🙃
+				</td>
+			</tr--><!--tr id="amazon" class="item gift-card">
+				<td class="product-image"><img src="http://www.ngc-group.ca/uploads/media_resized/3837_card_img_Amazonca_Gift_Card__Generic-1.jpg">
+				</td><td class="product">Amazon.ca<br>gift certificate
+				</td><td class="price">$25+
+				</td><td class="platform pc">PC
+				</td><td class="description" colspan="2">For everything 💵
+				</td>
+			</tr--><!--tr id="nintendo-eshop" class="item gift-card">
+				<td class="product-image"><img src="https://m.media-amazon.com/images/I/41vNnHRyVQL.jpg">
+				</td><td class="product">Nintendo eShop<br>GIFT CARD
+				</td><td class="price">$10<br>$20<br>$35<br>$50
+				</td><td class="platform nintendo-network">Nintendo Network
+				</td><td class="description" colspan="2">DLC 💱
+				</td>
+			</tr--><!--tr id="" class="item">
+				<td class="product-image"><img src="">
+				</td><td class="product">
+				</td><td class="price">
+				</td><td class="platform">
+				</td><td class="description" colspan="2">
+				</td><td class="stores"><a class="amazon" href="">Amazon</a>, <a class="gamestop" href="">Gamestop</a>, <a class="best-buy" href="">Best Buy</a>, <a class="walmart" href="">Walmart</a>
+				</td>
+			</tr-->
+		</table></td>
+	</tr>
+</table></body>
+</html>
