@@ -4,7 +4,6 @@
 	<title>Scott's Christmas List 2024</title>
 	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/almonte-snow">
 	<style>
-
 * {
 	box-sizing:border-box;
 	margin:0;
@@ -69,12 +68,14 @@ table {
 .description {
 	max-width:4.2in;
 }
-.description tr td{
-	padding-top:0.05in;
+.description tr td,
+#videogames tr td {
+	padding-top:0.025in;
+	padding-bottom:0.025in;
 }
-.description tr.topborder td,
-.description tr.topbottomborder td{
-	padding-top:none;
+.description tr td.heading {
+	padding-top:initial;
+	padding-bottom:initial;
 }
 .images {
 	max-width:3in;
@@ -144,15 +145,15 @@ h3 {
 					<br><span class="image-overlay">SE</span></div><div class="image-container"><img src="https://m.media-amazon.com/images/I/712aKuyZH6L._AC_SX466_.jpg">
 					<span class="image-overlay">Kaleid Flux</span>
 				</div></td><td class="description">
-					<table><tr><td colspan="2"><h2>GameSir G7 Xbox-compatible controller</h2>
-						</td></tr><tr><td colspan="2"><h3>Preferred:</h3>
+					<table><tr><td class="heading" colspan="2"><h2>GameSir G7 Xbox-compatible controller</h2>
+						</td></tr><tr><td class="heading" colspan="2"><h3>Preferred:</h3>
 						</td></tr><tr class="topborder"><td>HE
 						</td><td><a href="https://www.amazon.ca/dp/B0D8KQZPZ2">Amazon ~$53(Sale)</a>
 							<br><a href="https://www.gamesir.hk/products/gamesir-g7-he-xbox-controller">GameSir ~$50USD (~$71+CAD)</a>
 						</td></tr><tr><td>or Kaleid<br>(HE w/ lights)
 						</td><td><a href="https://www.amazon.ca/dp/B0CY1PJ2CN">Amazon sold out?</a>
 							<br><a href="https://www.gamesir.hk/products/gamesir-kaleid-xbox-controller">GameSir ~$50USD (~$71+CAD)</a>
-					</td></tr><tr><td colspan="2" class="topborder"><h3>Welcome Alternatives:</h3>
+					</td></tr><tr><td class="heading topborder" colspan="2"><h3>Welcome Alternatives:</h3>
 						</td></tr><tr class="topborder"><td>SE
 						</td><td><a href="https://www.amazon.ca/dp/B0C7GW9F88">Amazon ~$64 (blue sold out?)</a>
 							<br><a href="https://www.gamesir.hk/collections/designed-for-xbox">GameSir $36~45USD($52~71+CAD)(ora/purp less)</a>
@@ -170,7 +171,7 @@ h3 {
 					<span class="image-overlay">Micro HDMI to HDMI</span></div><div id="microsd" class="image-container"><img src="https://m.media-amazon.com/images/I/51-AgkS1NuL._AC_SY355_.jpg">
 					<span class="image-overlay">High Endurance MicroSD</span>
 				</div></td><td class="description">
-					<table><tr><td colspan="2"><h2>Raspberry Pi 5</h2>
+					<table><tr><td class="heading" colspan="2"><h2>Raspberry Pi 5</h2>
 						</td></tr><tr class="topborder"><td>Raspberry Pi 5 Board<br>(4GB preferred)
 						</td><td><a href="https://www.pishop.ca/product/raspberry-pi-5-4gb/">PiShop.ca ~$83+tax&amp;shipping</a>
 						</td></tr><tr><td>Raspberry Pi 5 Case w/ Fan
@@ -192,7 +193,7 @@ h3 {
 					<br><img src="https://m.media-amazon.com/images/I/51zjRoGTeRL.__AC_SX300_SY300_QL70_ML2_.jpg">
 					<img id="amazongiftcard" src="https://images.freshop.com/00799366537229/19b59c49e4d4224dbc4bf67a328f9ccb_large.png">
 				</td><td class="description">
-					<table><tr><td colspan="2"><h2>Gift Cards</h2>
+					<table><tr><td class="heading" colspan="2"><h2>Gift Cards</h2>
 						</td></tr><tr><td colspan="2">Any amount appreciated.
 						</td></tr><tr class="topborder"><td>Steam
 						</td><td>Best Buy, Walmart, EB Games, LD?, Toys 'R Us?, Shoppers?
@@ -214,7 +215,7 @@ h3 {
 			<tr id="ledstrip">
 				<td class="images"><img src="https://www.princessauto.com/ccstore/v1/images/?source=/file/v4980118037202739444/products/9293291_A0CG_00_01.jpg">
 				</td><td class="description">
-					<table><tr><td colspan="2"><h2>White LED Light Strip</h2>
+					<table><tr><td class="heading" colspan="2"><h2>White LED Light Strip</h2>
 						</td></tr><tr class="topbottomborder"><td>An extension to the existing strip
 						<br>or a new one to go all the way around the printer.
 						<br>Wouldn't remote-control and/or colour-changing be really fancy? 😜
@@ -224,7 +225,7 @@ h3 {
 				</td>
 			</tr><tr id="videogames">
 				<td colspan="2">
-					<table><tr><td><h2>Video Games</h2>
+					<table><tr><td class="heading"><h2>Video Games</h2>
 					</td></tr><tr><td>They don't make new physical video games for any consoles I own - my consoles are too old.
 						<br>PC games are essentially all online now and I'm strongly leaning PC in my recent games, since I have one.
 						<br>Physical games I would be able to enjoy now are used, resold, or old stock - very difficult to obtain.
@@ -236,7 +237,7 @@ h3 {
 					<img src="https://m.media-amazon.com/images/I/81SIfJkBVTL._AC_SY741_.jpg">
 					<img src="https://m.media-amazon.com/images/I/81VNcJmdAmL._AC_SX522_.jpg">
 				</td><td class="description">
-					<table><tr><td colspan="2"><h2>Clothes</h2>
+					<table><tr><td class="heading" colspan="2"><h2>Clothes</h2>
 						</td></tr><tr><td colspan="2">Pants would be nice, but can't buy those without me.
 						</td></tr><tr class="topborder"><td>Athletic shorts XXL-XXXL
 						<br>No brights. Designs okay. Unoffensive. Prefer stretch/loose. Pockets ideal. No internal mesh!
@@ -255,7 +256,7 @@ h3 {
 					<img src="https://m.media-amazon.com/images/I/61aFnAmYquL._AC_SX679_.jpg">
 					<img src="https://m.media-amazon.com/images/I/61QS7gvhulL._AC_SX466_.jpg">
 				</td><td class="description">
-					<table><tr><td colspan="2"><h2>Video Game Consoles</h2>
+					<table><tr><td class="heading" colspan="2"><h2>Video Game Consoles</h2>
 						</td></tr><tr><td colspan="2">I have digital games for PS5 and Series X, but none for Switch.
 						</td></tr><tr class="topborder"><td>Nintendo Switch OLED
 						</td><td>Amazon, Walmart, Costco, Shoppers, Best Buy, LD, EB Games, etc. $450
